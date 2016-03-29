@@ -22,13 +22,12 @@ RUN apt-get update && \
 	supervisor \
 	openssh-server
 
-RUN mkdir /github
-
-WORKDIR /github
-
-RUN git clone https://git.openstack.org/openstack-dev/devstack 
+RUN mkdir -p /github/devstack
+VOLUME ["/github/devstack"]
 
 WORKDIR /github/devstack
+
+RUN ls /github
 
 RUN tools/create-stack-user.sh && \
 	chown -R stack:stack /github

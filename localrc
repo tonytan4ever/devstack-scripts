@@ -1,7 +1,7 @@
 DATABASE_HOST=mysql
-MYSQL_HOST=mysql
-RABBIT_HOST=rabbitmq
-DATABASE_TYPE=postgresql
+MYSQL_HOST=mysql_openstack
+RABBIT_HOST=rabbitmq_openstack
+DATABASE_TYPE=mysql
 DATABASE_PASSWORD=st4ckb0ss
 DATABASE_BACKENDS=mysql
 RABBIT_USERID=stackrabbit
