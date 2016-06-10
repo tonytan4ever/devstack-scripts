@@ -1,5 +1,4 @@
 #!/bin/bash
-#!/bin/bash
 cd /media/sf_Rackspace/devstack/
 source openrc
 
